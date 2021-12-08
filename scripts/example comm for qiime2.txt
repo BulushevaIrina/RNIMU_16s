@@ -1,0 +1,56 @@
+conda activate qiime2-2020.2
+
+
+python /home/irinab/Desktop/16s/downsampling/scripts/qiime2.py /home/irinab/Desktop/16s/downsampling/127_02ng/v300056283_run32_L04_127_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/downsampling/127_02ng/v300056283_run32_L04_127_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/downsampling/qiime_try_127_1 127
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/32_run/125_qiime2_100000_reads/qiime2_results_script 125_run32
+
+###36 run/ Before change manifest file!
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_run_qiime2 125
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_126_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_126_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_run_qiime2 126
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_127_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_127_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_run_qiime2 127
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_run_qiime2 128
+
+
+python qiime2.py v300009398_run36_2_L04_125_1_100000_reads_filtered.fq v300009398_run36_2_L04_125_2_100000_reads_filtered.fq 36_run_qiime2 125
+
+
+
+##############
+For SE
+
+python /home/irinab/Desktop/16s/scripts/qiime2_SE.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_run_SE_qiime2 125_SE
+
+python /home/irinab/Desktop/16s/scripts/qiime2_SE.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_run_SE_qiime2 128_SE_read_1
+
+#############
+Dada2 vs deblur
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/32_run/qiime_dada2_vs_deblur 125_run32_dada2
+
+python /home/irinab/Desktop/16s/scripts/qiime2_deblur.py /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/32_run/qiime_dada2_vs_deblur 125_run32_deblur_trim240
+
+python /home/irinab/Desktop/16s/scripts/qiime2_deblur.py /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/32_run/qiime_dada2_vs_deblur 125_run32_deblur_no_trim
+
+#####deblur
+python /home/irinab/Desktop/16s/scripts/qiime2_deblur.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_run_qiime2_deblur 125
+
+
+###############
+justConcatenate
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_125_just_conc 125_just_conc_TRUE
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_126_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_126_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_dada2_just_conc_TRUE 126_just_conc_TRUE
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_127_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_127_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_dada2_just_conc_TRUE 127_just_conc_TRUE
+
+python /home/irinab/Desktop/16s/scripts/qiime2.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_2_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/36_dada2_just_conc_TRUE 128_just_conc_TRUE
+
+
+
+
+

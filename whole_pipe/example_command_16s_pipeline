@@ -1,0 +1,12 @@
+python /home/irinab/Desktop/16s/scripts/make_whole_pipe_parallel/16s_pipeline.py /home/irinab/Desktop/16s/45_run/v300068121_run45_L01_57_1.fq.gz /home/irinab/Desktop/16s/45_run/v300068121_run45_L01_57_2.fq.gz 100000 3 umi_yes GTGYCAGCMGCCGCGGTAA GGACTACNVGGGTWTCTAAT /home/irinab/Desktop/16s/45_run/R45_L01_B57_output R45_L01_B57
+
+python ~/Desktop/16s/scripts/make_whole_pipe_parallel/taxonomy_build_whole_table.py feature_info_R45_L01_B61.csv blast_features_R45_L01_B61.tsv RDP_features_R45_L01_B61.tsv taxonomy_result_table_R45_L01_B61
+#######
+
+blastn -task megablast -db rRNA_typestrains/16S_ribosomal_RNA -query feature_sequense_60.fasta -out blast_features_60.csv -outfmt "6 qaccver sscinames sblastnames ppos evalue bitscore score staxid" -max_target_seqs 4 -remote
+
+rdp_classifier -o /home/irinab/Desktop/16s/45_run_try_whole_pipe/60_try/60_output/RDP_features_60.tsv -q /home/irinab/Desktop/16s/45_run_try_whole_pipe/60_try/60_output/feature_sequense_60.fasta
+
+
+
+

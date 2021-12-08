@@ -1,0 +1,4 @@
+# paired-end fastq manifest file
+sample-id,absolute-filepath,direction
+sample-1,/home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_1_100000_reads_filtered.fq,forward
+sample-1,/home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_2_100000_reads_filtered.fq,reverse

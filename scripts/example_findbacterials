@@ -1,0 +1,8 @@
+
+python /home/irinab/Desktop/16s/scripts/find_bacterials.py /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_1_100000_reads.fq /home/irinab/Desktop/16s/32_run/125_5ng/v300056283_run32_L04_125_2_100000_reads.fq Sm 6
+
+
+
+python /home/irinab/Desktop/16s/scripts/find_bacterials.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_1_100000_reads_filtered.fq /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_2_100000_reads_filtered.fq Lf 15
+
+

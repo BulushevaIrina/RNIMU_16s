@@ -1,0 +1,18 @@
+#output will be the folder with input file, outpup file with results - in your current folder
+
+###for try 32 run
+python /home/irinab/Desktop/16s/scripts/downsampling_filtration.py /home/irinab/Desktop/16s/32_run/try_script/v300056283_run32_L04_127_1.fq.gz /home/irinab/Desktop/16s/32_run/try_script/v300056283_run32_L04_127_2.fq.gz 100000 3 output_127.txt
+
+
+###for 36 run
+python /home/irinab/Desktop/16s/scripts/downsampling_filtration.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_1.fq.gz /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_125_2.fq.gz 100000 3 downs_filtr_output_36_run.txt
+
+python /home/irinab/Desktop/16s/scripts/downsampling_filtration.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_126_1.fq.gz /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_126_2.fq.gz 100000 3 downs_filtr_output_36_run.txt
+
+python /home/irinab/Desktop/16s/scripts/downsampling_filtration.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_127_1.fq.gz /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_127_2.fq.gz 100000 3 downs_filtr_output_36_run.txt
+
+python /home/irinab/Desktop/16s/scripts/downsampling_filtration.py /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_1.fq.gz /home/irinab/Desktop/16s/36_run/v300009398_run36_2_L04_128_2.fq.gz 100000 3 downs_filtr_output_36_run.txt
+
+
+#count lines of gz file
+zcat v300009398_run36_2_L04_125_1.fq.gz | wc -l
